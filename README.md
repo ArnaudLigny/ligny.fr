@@ -1,3 +1,1 @@
-# Ligny.fr
-
-http://ligny.fr/
+# [ligny.fr](https://ligny.fr)
