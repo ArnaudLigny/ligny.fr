@@ -17,11 +17,11 @@ links:
     url: https://arnaudligny.fr/blog/
     color: '#1A4A91'
     icon: solid:blog
-  - title: Contact
-    url: mailto:arnaud@ligny.fr
-    icon: solid:envelope
   - title: Cecil
     url: https://cecil.app
     color: '#163C56'
+  - title: Contact
+    url: mailto:arnaud@ligny.fr
+    icon: solid:envelope
 ---
 Hello, je suis Arnaud Ligny 👋
