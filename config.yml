@@ -1,8 +1,13 @@
 title: Arnaud Ligny
 baseline: 'Les liens'
 baseurl: 'https://cecil.local/'
-description: 'Quelques liens de Ligny.'
+description: 'Quelques liens à propos de Arnaud Ligny.'
 author:
     name: 'Arnaud Ligny'
     url: 'https://arnaudligny.fr'
-image: cecil-card.png
+image: https://www.gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=500
+language: fr
+languages:
+  - code: fr
+    locale: fr_FR
+    name: Français
