@@ -11,5 +11,5 @@ curl -LO https://cecil.app/cecil.phar
 
 ```bash
 npx tailwindcss -i ./assets/tailwind.css -o ./assets/styles.css --watch
-php cecil.phar serve -v
+php cecil.phar serve -v --clear-cache
 ```
