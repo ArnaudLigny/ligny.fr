@@ -5,7 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#6194c7',
+        neutral: '#94A3B8',
+      },
+      textColor: {
+        primary: 'white',
+        secondary: '#94A3B8',
+        link: '#6194c7',
+      },
+      backgroundColor: {
+        primary: '#1E293B',
       },
     },
   },
