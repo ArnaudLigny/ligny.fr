@@ -11,7 +11,7 @@ curl -LO https://cecil.app/cecil.phar
 
 ## Usage
 
-Add links in `content/index.md` front matter.
+Edit `content/index.md` to add links in front matter and short presentation in body.
 
 Build and serve:
 
