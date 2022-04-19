@@ -3,9 +3,9 @@ baseline: 'Les liens'
 baseurl: 'https://cecil.local/'
 description: 'Quelques liens à propos de Arnaud Ligny.'
 author:
-    name: 'Arnaud Ligny'
-    url: 'https://arnaudligny.fr'
-image: https://www.gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=500
+  name: 'Arnaud Ligny'
+  url: 'https://arnaudligny.fr'
+image: avatar.jpeg
 language: fr
 languages:
   - code: fr
