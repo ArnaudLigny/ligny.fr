@@ -23,4 +23,4 @@ links:
     url: mailto:arnaud@ligny.fr
     icon: solid:envelope
 ---
-Hello, je suis Arnaud Ligny 👋
+Hello, je suis Arnaud 👋
