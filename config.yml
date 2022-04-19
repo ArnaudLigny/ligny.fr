@@ -11,3 +11,4 @@ languages:
   - code: fr
     locale: fr_FR
     name: Français
+source: https://github.com/ArnaudLigny/ligny.fr
