@@ -1,5 +1,4 @@
 ---
-title: Home
 links:
   - title: Twitter
     url: https://twitter.com/ArnaudLigny/
