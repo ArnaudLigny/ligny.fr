@@ -1,40 +1,58 @@
+{%- set avatar = asset('avatar.jpeg') -%}
+{%- set hex_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'] -%}
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {%~ include 'partials/metatags.html.twig' with {page, site} only ~%}
+    {%~ include 'partials/metatags.html.twig' with {page, site} only %}
     <style>{{ asset('styles.css')|inline }}</style>
     <link rel="stylesheet" href="{{ asset('fontawesome/css/fontawesome.css')|url }}">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css')|url }}">
   </head>
-  <body class="bg-slate-800 text-white text-center">
-    <div class="mx-auto my-auto">
-      <div class="flex flex-col py-8 px-8">
-        <header>
-          {% set avatar = asset('avatar.jpeg') %}
-          <img class="w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6 rounded-full m-auto shadow-2xl md:border-2" src="{{ avatar|url }}" alt="{{ site.title }}" width="{{ avatar.width }}" height="{{ avatar.height }}">
-          <h1 class="text-4xl font-semibold pt-6 pb-2 border-b border-slate-400">{{ site.title }}</h1>
-        </header>
-        <main>
-          <div class="mt-4 text-slate-400">{{ page.content }}</div>
-          <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 md:gap-y-4 mt-8">
-            {% set hex_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'] %}
-            {% for link in page.links %}
-              {% set hex = random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) %}
-            <a style="background-color: {{ link.color|default('#' ~ hex) }}" class="flex justify-center items-center space-x-2 py-3 rounded-md transition ease-in-out hover:scale-105 duration-300 text-white font-semibold" href="{{ link.url }}"><i class="fa-{{ link.icon|default('solid:link')|split(':')[0] }} fa-{{ link.icon|default('solid:link')|split(':')[1] }}"></i><span>{{ link.title }}<span></a>
-            {% endfor %}
-          </div>
-        </main>
-        <footer class="pt-8">
-          <div>
-            Powered by <a href="{{ cecil.url }}">Cecil</a>, <a href="https://tailwindcss.com">Tailwind CSS</a>, <a href="https://fontawesome.com">Font Awesome</a>
-          </div>
-          <div>
-            <a href="https://github.com/ArnaudLigny/ligny.fr"><i class="fa-brands fa-github"></i></a>
-          </div>
-        </footer>
-      </div>
+  <body class="bg-slate-800 text-white">
+    <div class="mx-auto my-auto flex flex-col py-8 px-8">
+      <button class="absolute top-3 right-4 text-primary" id="share-button" type="button" title="{% trans %}Share{% endtrans %}">
+        <i class="fa-solid fa-share-nodes text-xl"></i>
+      </button>
+      <header class="text-center">
+        <img class="w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6 rounded-full m-auto shadow-2xl md:border-2" src="{{ avatar|url }}" alt="{{ site.title }}" width="{{ avatar.width }}" height="{{ avatar.height }}">
+        <h1 class="text-4xl font-semibold pt-6 pb-2 border-b border-slate-400">{{ site.title }}</h1>
+      </header>
+      <main class="text-center">
+        <div class="mt-4 text-slate-400">
+          {{ page.content }}
+        </div>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 md:gap-y-4 mt-8">
+          {%- for link in page.links ~%}
+            {%- set hex = random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~%}
+          <a style="background-color: {{ link.color|default('#' ~ hex) }}" class="flex justify-center items-center space-x-2 py-3 rounded-md transition ease-in-out hover:scale-105 duration-300 text-white font-semibold" href="{{ link.url }}"><i class="fa-{{ link.icon|default('solid:link')|split(':')[0] }} fa-{{ link.icon|default('solid:link')|split(':')[1] }}"></i><span>{{ link.title }}<span></a>
+          {%- endfor ~%}
+        </div>
+      </main>
+      <footer class="pt-8 text-center">
+        <div>
+          {% set powered_by %}
+          <a href="{{ cecil.url }}">Cecil</a>, <a href="https://tailwindcss.com">Tailwind CSS</a>, <a href="https://fontawesome.com">Font Awesome</a>
+          {% endset %}
+          {% trans %}Powered by {{ powered_by }}{% endtrans %}
+        </div>
+        <div>
+          <a href="{{ site.source }}" title="{% trans %}View source{% endtrans %}"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </footer>
     </div>
+    <script>{% apply minify_js ~%}
+      const shareButton = document.getElementById('share-button');
+      if (navigator.share) {
+        shareButton.addEventListener('click', event => {
+          navigator.share({text: '{{ site.title }}', url: '{{ url(page, {canonical: true}) }}'}).then(() => {
+            console.log('Thanks for sharing!');
+          }).catch(console.error);
+        });
+      } else {
+        shareButton.remove();
+      }
+    {% endapply %}</script>
   </body>
 </html>
