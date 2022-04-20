@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-04-20 00:53+0200\n"
-"PO-Revision-Date: 2022-04-20 00:53+0200\n"
+"POT-Creation-Date: 2022-04-20 02:28+0200\n"
+"PO-Revision-Date: 2022-04-20 02:28+0200\n"
 "Last-Translator: Arnaud Ligny <arnaud@ligny.org>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -23,5 +23,5 @@ msgid "Powered by %powered_by%"
 msgstr "Propulsé par %powered_by%"
 
 #: index.html.twig:41
-msgid "View source"
-msgstr "Voir la source"
+msgid "View source code"
+msgstr "Voir le code source"
