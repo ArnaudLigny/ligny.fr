@@ -9,6 +9,7 @@
     <style>{{ asset('styles.css')|inline }}</style>
     <link rel="stylesheet" href="{{ asset('fontawesome/css/fontawesome.css')|url }}">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css')|url }}">
+    <link rel="manifest" href="{{ url('manifest') }}">
     <meta name="theme-color" content="#1E293B">
   </head>
   <body class="bg-primary text-primary">
@@ -33,10 +34,10 @@
       </main>
       <footer class="pt-8 text-center">
         <div>
-          {% set powered_by %}
+          {% set powered_by -%}
           <a href="{{ cecil.url }}">Cecil</a>, <a href="https://tailwindcss.com">Tailwind CSS</a>, <a href="https://fontawesome.com">Font Awesome</a>
-          {% endset %}
-          {% trans %}Powered by {{ powered_by }}{% endtrans %}
+          {%- endset -%}
+          {%- trans %}Powered by {{ powered_by }}{% endtrans ~%}
         </div>
         <div>
           <a href="{{ site.source }}" title="{% trans %}View source code{% endtrans %}"><i class="fa-brands fa-github" title="{% trans %}View source code{% endtrans %}"></i><span class="sr-only">{% trans %}View source code{% endtrans %}</span></a>
@@ -55,5 +56,6 @@
         shareButton.remove();
       }
     {% endapply %}</script>
+    {%~ include 'partials/regsw.js.twig' ~%}
   </body>
 </html>
