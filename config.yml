@@ -18,3 +18,10 @@ metatags:
 output:
   pagetypeformats:
     homepage: html
+theme:
+  - serviceworker
+manifest:
+  background_color: '#1E293B'
+  theme_color: '#1E293B'
+serviceworker:
+  enabled: true
