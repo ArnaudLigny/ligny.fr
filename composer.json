@@ -1,0 +1,10 @@
+{
+    "require": {
+        "cecil/theme-serviceworker": "^1.12"
+    },
+    "config": {
+        "allow-plugins": {
+            "cecil/theme-installer": true
+        }
+    }
+}
