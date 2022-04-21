@@ -25,3 +25,8 @@ manifest:
   theme_color: '#1E293B'
 serviceworker:
   enabled: true
+defaultpages:
+  404:
+    published: false
+  sitemap:
+    published: false
