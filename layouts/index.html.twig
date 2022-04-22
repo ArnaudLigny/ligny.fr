@@ -45,8 +45,8 @@
             }
           </style>
           <a style="background-color: {{ link.color|default('#' ~ hex) }}; color: rgb(var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color))" class="flex justify-center items-center space-x-2 py-3 rounded-md transition ease-in-out hover:scale-105 duration-300 text-primary font-semibold" href="{{ link.url }}">
-	          <i class="fa-{{ link.icon|default('solid:link')|split(':')[0] }} fa-{{ link.icon|default('solid:link')|split(':')[1] }}"></i>
-	          <span>{{ link.title }}<span>
+            <i class="fa-{{ link.icon|default('solid:link')|split(':')[0] }} fa-{{ link.icon|default('solid:link')|split(':')[1] }}"></i>
+            <span>{{ link.title }}<span>
           </a>
           {%- endfor ~%}
         </div>
