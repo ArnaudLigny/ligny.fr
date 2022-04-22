@@ -29,7 +29,7 @@
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 md:gap-y-4 mt-8">
           {%- for link in page.links ~%}
             {%- set hex = random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~%}
-          <style>
+          <style>{% apply minify_css ~%}
             :root {
               --button-{{ loop.index }}-color: calc(
                 (
@@ -43,7 +43,7 @@
                 ) * -1000
               );
             }
-          </style>
+          {% endapply %}</style>
           <a style="background-color: {{ link.color|default('#' ~ hex) }}; color: rgb(var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color))" class="flex justify-center items-center space-x-2 py-3 rounded-md transition ease-in-out hover:scale-105 duration-300 text-primary font-semibold" href="{{ link.url }}">
             <i class="fa-{{ link.icon|default('solid:link')|split(':')[0] }} fa-{{ link.icon|default('solid:link')|split(':')[1] }}"></i>
             <span>{{ link.title }}<span>
