@@ -19,6 +19,10 @@ links:
   - title: Cecil
     url: https://cecil.app
     color: '#163C56'
+  - title: Faire un don
+    url: https://www.paypal.com/donate/?hosted_button_id=B93F9MKHFX7T6
+    color: '#FED13C'
+    icon: brands:paypal
   - title: Contact
     url: mailto:arnaud@ligny.fr
     color: '#183153'
