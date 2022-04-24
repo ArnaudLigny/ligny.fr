@@ -21,7 +21,7 @@ links:
     color: '#163C56'
   - title: Contact
     url: mailto:arnaud@ligny.fr
-    color: '#0F1419'
+    color: '#183153'
     icon: solid:envelope
 ---
 Hello, je suis Arnaud 👋
