@@ -20,7 +20,7 @@ links:
     url: https://cecil.app
     color: '#163C56'
   - title: Faire un don
-    url: https://www.paypal.com/donate/?hosted_button_id=B93F9MKHFX7T6
+    url: https://www.paypal.com/donate/?hosted_button_id=B93F9MKHFX7T6&locale.x=fr
     color: '#FED13C'
     icon: brands:paypal
   - title: Contact
