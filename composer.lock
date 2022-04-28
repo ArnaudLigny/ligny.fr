@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7fcfbd174289f697355988967f3c786",
+    "content-hash": "b09e7dcd95f33fdba019755bd41ba0f8",
     "packages": [
         {
             "name": "cecil/theme-installer",
@@ -75,6 +75,60 @@
                 }
             ],
             "time": "2022-01-06T10:54:26+00:00"
+        },
+        {
+            "name": "cecil/theme-netlify",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-netlify.git",
+                "reference": "b79f9963b5553dd02ae3061fa1b5c145ccf5f7b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/b79f9963b5553dd02ae3061fa1b5c145ccf5f7b3",
+                "reference": "b79f9963b5553dd02ae3061fa1b5c145ccf5f7b3",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^1.4"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "name": "netlify",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil component theme Netlify",
+            "keywords": [
+                "cecil",
+                "netlify",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-netlify/issues",
+                "source": "https://github.com/Cecilapp/theme-netlify/tree/1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/narno",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-03-28T22:52:59+00:00"
         },
         {
             "name": "cecil/theme-serviceworker",

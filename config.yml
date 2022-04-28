@@ -23,6 +23,7 @@ output:
   pagetypeformats:
     homepage: html
 theme:
+  - netlify
   - serviceworker
 manifest:
   background_color: '#1E293B'
