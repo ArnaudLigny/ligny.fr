@@ -1,5 +1,7 @@
 My [Linktree](https://linktr.ee) clone powered by [Cecil](https://cecil.app), [Tailwind CSS](https://tailwindcss.com) and [Font Awesome](https://fontawesome.com).
 
+> Create your own with the GitHub template: https://github.com/Cecilapp/Links.
+
 ## Install
 
 ```bash
