@@ -35,3 +35,11 @@ defaultpages:
     published: false
   sitemap:
     published: false
+assets:
+  images:
+    optimize:
+      enabled: true
+    responsive:
+      enabled: true
+    webp:
+      enabled: true
