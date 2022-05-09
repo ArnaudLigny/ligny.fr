@@ -19,7 +19,7 @@
         <i class="fa-solid fa-share-nodes text-xl" title="{% trans %}Share{% endtrans %}"></i><span class="sr-only">{% trans %}Share{% endtrans %}</span>
       </button>
       <header class="text-center">
-        {{ avatar|html({class: 'w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6 rounded-full m-auto shadow-2xl md:border-2', alt: site.title}, {responsive: true, webp: true}) }}
+        {{ avatar|html({class: 'w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6 rounded-full m-auto shadow-2xl md:border-2', alt: site.title}) }}
         <h1 class="text-4xl font-semibold pt-6 pb-2 border-b border-neutral">{{ site.title }}</h1>
       </header>
       <main class="text-center">
