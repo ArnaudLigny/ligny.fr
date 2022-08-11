@@ -15,7 +15,7 @@ npm install
 
 ## Usage
 
-Edit `content/index.md` to add links in front matter and short presentation in body.
+Edit `pages/index.md` to add links in front matter and short presentation in body.
 
 Build and serve:
 
