@@ -30,3 +30,5 @@ links:
     icon: solid:envelope
 ---
 Hello, je suis Arnaud 👋
+
+Consultant fonctionnel et technique web, mobile et expert e-commerce, papa, cycliste urbain, créateur de [Cecil](https://cecil.app), co-admin de [Jamstatic](https://jamstatic.fr), et amateur de bière.
