@@ -12,9 +12,6 @@ module.exports = {
         secondary: '#94A3B8',
         link: '#6194c7',
       },
-      backgroundColor: {
-        primary: '#1E293B',
-      },
     },
   },
 }
