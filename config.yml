@@ -1,15 +1,18 @@
 title: Arnaud Ligny
-baseurl: 'https://ligny.fr/'
-description: 'Quelques liens à propos de Arnaud Ligny.'
+baseurl: https://ligny.fr/
+description: Quelques liens à propos de Arnaud Ligny.
 author:
-  name: 'Arnaud Ligny'
-  url: 'https://arnaudligny.fr'
+  name: Arnaud Ligny
+  url: https://arnaudligny.fr
 image: avatar.jpeg
 language: fr
 languages:
   - code: fr
     locale: fr_FR
     name: Français
+  - code: en
+    locale: en_US
+    name: English
 source: https://github.com/ArnaudLigny/ligny.fr
 metatags:
   favicon:
@@ -24,7 +27,7 @@ output:
     homepage: html
 theme:
   - netlify
-  - serviceworker
+  - pwa
 manifest:
   background_color: '#1E293B'
   theme_color: '#1E293B'
@@ -43,3 +46,5 @@ assets:
       enabled: true
     webp:
       enabled: true
+netlify:
+  redirect_by_language: true
