@@ -1,4 +1,4 @@
-{%- set avatar = asset('avatar.jpeg') -%}
+{%- set avatar = asset(site.avatar|default('avatar.jpeg')) -%}
 {%- set hex_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'] -%}
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
@@ -11,15 +11,15 @@
     {{ asset('fontawesome/css/brands.css')|html({}, {preload: true}) }}
     {{ asset('fontawesome/css/solid.css')|html({}, {preload: true}) }}
     <link rel="manifest" href="{{ url('manifest') }}">
-    <meta name="theme-color" content="#1E293B">
+    <meta name="theme-color" content="{{ site.manifest.theme_color }}">
   </head>
-  <body class="bg-primary text-primary">
+  <body style="background-color: {{ site.manifest.background_color }}" class="text-primary">
     <div class="mx-auto my-auto flex flex-col py-8 px-8">
       <button class="absolute top-3 right-4 text-link" id="share-button" type="button" title="{% trans %}Share{% endtrans %}">
         <i class="fa-solid fa-share-nodes text-xl" title="{% trans %}Share{% endtrans %}"></i><span class="sr-only">{% trans %}Share{% endtrans %}</span>
       </button>
       <header class="text-center">
-        {{ avatar|html({class: 'w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6 rounded-full m-auto shadow-2xl md:border-2', alt: site.title}) }}
+        {{ avatar|html({class: 'w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6 rounded-full m-auto shadow-2xl md:border-2', alt: site.title}, {responsive: true, webp: true}) }}
         <h1 class="text-4xl font-semibold pt-6 pb-2 border-b border-neutral">{{ site.title }}</h1>
       </header>
       <main class="text-center">
@@ -69,13 +69,14 @@
       if (navigator.share) {
         shareButton.addEventListener('click', event => {
           navigator.share({text: '{{ site.title }}', url: '{{ url(page, {canonical: true}) }}'}).then(() => {
-            console.log('Thanks for sharing!');
+            console.log('Thanks for sharing.');
           }).catch(console.error);
         });
       } else {
+        console.log('`navigator.share` not supported.');
         shareButton.remove();
       }
     {% endapply %}</script>
-    {%~ include 'partials/regsw.js.twig' ~%}
+    {%~ include 'partials/regsw.js.twig' ignore missing with {site} only ~%}
   </body>
 </html>
