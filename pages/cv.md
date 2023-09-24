@@ -1,3 +1,3 @@
 ---
-redirect: https://arnaudligny/cv/
+redirect: https://arnaudligny.fr/cv/
 ---
