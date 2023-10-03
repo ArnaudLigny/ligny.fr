@@ -5,13 +5,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {%~ include 'partials/metatags.html.twig' with {page, site} only %}
+    {%- include 'partials/metatags.html.twig' with {page, site} only ~%}
     <style>{{ asset('styles.css')|inline }}</style>
     {{ asset('fontawesome/css/fontawesome.css')|html({}, {preload: true}) }}
     {{ asset('fontawesome/css/brands.css')|html({}, {preload: true}) }}
     {{ asset('fontawesome/css/solid.css')|html({}, {preload: true}) }}
-    <link rel="manifest" href="{{ url('manifest') }}">
-    <meta name="theme-color" content="{{ site.manifest.theme_color }}">
+    {%- if 'pwa' in site.theme|default({}) ~%}
+    <link rel="manifest" href="{{ url('manifest', {language: site.language}) }}" />
+    {%- endif ~%}
+    <meta name="theme-color" content="{{ site.manifest.theme_color }}" />
   </head>
   <body style="background-color: {{ site.manifest.background_color }}" class="text-primary max-w-screen-lg mx-auto">
     <div class="mx-auto my-auto flex flex-col py-8 px-8">
@@ -55,7 +57,7 @@
       <footer class="pt-8 text-center">
         <div>
           {% set powered_by -%}
-          <a href="{{ cecil.url }}">Cecil</a>, <a href="https://tailwindcss.com">Tailwind CSS</a>, <a href="https://fontawesome.com">Font Awesome</a>
+          <a href="https://links.cecil.app">Links</a>, <a href="{{ cecil.url }}">Cecil</a>, <a href="https://tailwindcss.com">Tailwind CSS</a>, <a href="https://fontawesome.com">Font Awesome</a>
           {%- endset -%}
           {%- trans %}Powered by %powered_by%{% endtrans ~%}
         </div>
