@@ -17,7 +17,7 @@ links:
     color: '#000'
     icon: brands:github
   - title: Cecil
-    url: https://cecil.app
+    url: https://cecil.app/fr/
     color: '#163C56'
     icon: solid:user-tie
   - title: Faire un don
