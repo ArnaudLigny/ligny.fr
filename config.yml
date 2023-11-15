@@ -26,8 +26,9 @@ output:
   pagetypeformats:
     homepage: html
 theme:
-  - netlify
+  - fontawesome
   - pwa
+  - netlify
 manifest:
   background_color: '#1E293B'
   theme_color: '#1E293B'
