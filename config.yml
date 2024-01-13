@@ -48,4 +48,4 @@ assets:
     webp:
       enabled: true
 netlify:
-  redirect_by_language: false
+  redirect_by_language: true
