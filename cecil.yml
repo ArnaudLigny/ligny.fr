@@ -51,9 +51,9 @@ theme:
   - fontawesome
   - pwa
   - netlify
-#manifest:
-#  background_color: '#1E293B'
-#  theme_color: '#1E293B'
+manifest:
+  #background_color: '#fff'
+  theme_color: '#0369a1'
 serviceworker:
   enabled: false
 pages:
@@ -62,13 +62,5 @@ pages:
       published: false
     sitemap:
       published: false
-assets:
-  images:
-    optimize:
-      enabled: true
-    responsive:
-      enabled: true
-    webp:
-      enabled: true
 netlify:
   redirect_by_language: true
