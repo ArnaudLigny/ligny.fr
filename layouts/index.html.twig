@@ -25,18 +25,17 @@
       <header class="text-center">
         {#- avatar ~#}
         {{ avatar|html({class: 'w-1/2 max-w-36 rounded-full m-auto shadow-2xl', alt: 'Avatar of %name%'|trans({'%name%': site.title})}, {responsive: true, webp: true}) }}
-        {#- title ~#}
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold pt-6 pb-2">{{ site.title }}</h1>
-        {#- baseline ~#}
-        <div class="font-medium">
-          {{ site.baseline }}
-        </div>
+        {#- h1 ~#}
+        <h1>
+          <div class="text-4xl sm:text-5xl lg:text-6xl font-bold pt-6 pb-2">{{ site.title }}</div>
+          <div class="text-base font-medium">{{ site.baseline }}</div>
+        </h1>
         {#- social links ~#}
         {%- if site.social|default([]) ~%}
         <div class="mt-4 flex flex-row justify-center space-x-2">
         {%- for social_name, social_values in site.social ~%}
           {%- set color = socials_color[social_name]|default ~%}
-          <a href="{{ social_values['url']|default }}">{{ fontawesome.icon('brands', social_name, 'xl', {title: social_name|capitalize, style: 'color: ' ~ color|default ~ ';'}) ~}}</a>
+          <a href="{{ social_values['url']|default }}" title="{{ social_name|capitalize }}">{{ fontawesome.icon('brands', social_name, 'xl', {title: social_name|capitalize, style: 'color: ' ~ color|default ~ ';'}) ~}}<span class="sr-only">{{ social_name|capitalize }}</span></a>
         {%- endfor ~%}
         </div>
         {%- endif ~%}
@@ -103,8 +102,17 @@
       {%- apply minify_js ~%}
       const shareButton = document.getElementById('share-button');
       if (navigator.share) {
-        shareButton.addEventListener('click', event => {
-          navigator.share({text: '{{ site.title }}', url: '{{ url(page, {canonical: true}) }}'}).then.catch(console.error);
+        shareButton.addEventListener('click', async () => {
+          try {
+            const shareData = {
+              title: '{{ site.title }}',
+              text: '{{ site.baseline }}',
+              url: '{{ url(page, {canonical: true}) }}',
+            };
+            await navigator.share(shareData);
+          } catch (err) {
+            console.log('`navigator.share` error:', err);
+          }
         });
       } else {
         console.log('`navigator.share` not supported.');

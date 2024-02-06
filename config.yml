@@ -1,9 +1,19 @@
 title: Arnaud Ligny
 baseurl: https://ligny.fr/
+baseline: Consultant fonctionnel et technique web, mobile et expert e-commerce.
 description: Quelques liens à propos de Arnaud Ligny.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
+social:
+  github:
+    username: ArnaudLigny
+    url: https://github.com/ArnaudLigny/
+  twitter:
+    creator: ArnaudLigny
+    url: https://twitter.com/ArnaudLigny/
+  linkedin:
+    url: https://fr.linkedin.com/in/arnaudligny/fr/
 image: avatar.jpeg
 language: fr
 languages:
@@ -13,6 +23,18 @@ languages:
   - code: en
     locale: en_US
     name: English
+    config:
+      baseline: Fonctional and technical Web consultant, mobile and eCommerce expert.
+      description: Some links about Arnaud Ligny.
+      social:
+        github:
+          username: ArnaudLigny
+          url: https://github.com/ArnaudLigny/
+        twitter:
+          creator: ArnaudLigny
+          url: https://twitter.com/ArnaudLigny/
+        linkedin:
+          url: https://linkedin.com/in/arnaudligny/en/
 source: https://github.com/ArnaudLigny/ligny.fr
 metatags:
   favicon:

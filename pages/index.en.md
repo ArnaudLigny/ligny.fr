@@ -1,21 +1,9 @@
 ---
 links:
-  - title: Twitter
-    url: https://twitter.com/ArnaudLigny/
-    color: '#1DA1F2'
-    icon: brands:twitter
-  - title: LinkedIn
-    url: https://linkedin.com/in/arnaudligny/en/
-    color: '#0A66C2'
-    icon: brands:linkedin
   - title: Blog 🇫🇷
     url: https://arnaudligny.fr/blog/
     color: '#1A4A91'
     icon: solid:blog
-  - title: GitHub
-    url: https://github.com/ArnaudLigny/
-    color: '#000'
-    icon: brands:github
   - title: Cecil
     url: https://cecil.app
     color: '#163C56'
