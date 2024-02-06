@@ -17,6 +17,4 @@ links:
     color: '#183153'
     icon: solid:envelope
 ---
-Functional and technical consultant web, mobile and eCommerce expert.
-
-Creator of [Cecil](https://cecil.app) & co-admin of [Jamstatic](https://jamstatic.fr).
+Creator of [Cecil](https://cecil.app) & co-creator of [Jamstatic](https://jamstatic.fr).
