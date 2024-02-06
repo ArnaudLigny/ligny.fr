@@ -1,27 +1,76 @@
-My [Linktree](https://linktr.ee) clone powered by [Cecil](https://cecil.app), [Tailwind CSS](https://tailwindcss.com) and [Font Awesome](https://fontawesome.com).
+**_Links_** is a Linktree alternative powered by [Cecil](https://cecil.app), [Tailwind CSS](https://tailwindcss.com) and [Font Awesome](https://fontawesome.com).
 
-> Create your own with the [GitHub template](https://github.com/Cecilapp/Links).
+[![Links example](docs/screenshot.png)](links.cecil.app)
+
+Demo: <https://cecil-links-demo.netlify.app>
 
 ## Install
 
+The easiest way to create a new Links project is using [Composer](https://getcomposer.org):
+
 ```bash
-# download Cecil
-curl -LO https://cecil.app/cecil.phar
-# install utility themes
-composer install
-# install Tailwind CSS
+composer create-project cecil/links my-project
+```
+
+If you need to personalize theme color (see below), you must install `tailwindcss` package:
+
+```bash
 npm install
+```
+
+### Update
+
+If you want to update utility themes (i.e.: _[fontawesome](https://github.com/Cecilapp/theme-fontawesome#readme)_, _[pwa](https://github.com/Cecilapp/theme-pwa#readme)_ and _[netlity](https://github.com/Cecilapp/theme-netlify#readme)_) you must run the following command:
+
+```bash
+composer update
 ```
 
 ## Usage
 
-Edit `pages/index.md` to add links in front matter and short presentation in body.
-
-Build and serve:
+### Preview
 
 ```bash
-# build CSS
-npx tailwindcss -i ./assets/tailwind.css -o ./assets/styles.css --watch
-# build and serve static website
-php cecil.phar serve -v --clear-cache
+php cecil.phar serve
 ```
+
+### Manage links
+
+Edit `pages/index.md` to add links in _front matter_ and short presentation in _body_.
+
+```yaml
+links:
+  - title: Twitter                        # links title
+    url: https://twitter.com/ArnaudLigny/ # URL
+    color: '#1DA1F2'                      # hexadecimal color code
+    icon: brands:twitter                  # Font Awesome icon (https://fontawesome.com/icons): <brands|solid>:icon
+```
+
+### Configuration
+
+Define the configuration in `cecil.yml`.
+
+> [!TIP]
+> Full documentation is available at [cecil.app](https://cecil.app/documentation/configuration/).
+
+### Customize
+
+Customize theme color in `tailwind.config.js`, then rebuild CSS:
+
+```bash
+npx tailwindcss -i ./assets/tailwind.css -o ./assets/styles.css
+```
+
+### Publish
+
+```bash
+php cecil.phar build
+```
+
+Then deploy __site_ directory content to your web hosting solution.
+
+## License
+
+_Links_ is a free software distributed under the terms of the MIT license.
+
+© [Arnaud Ligny](https://arnaudligny.fr)
