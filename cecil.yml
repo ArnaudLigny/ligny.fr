@@ -47,7 +47,7 @@ manifest:
   #background_color: '#fff'
   theme_color: '#0369a1'
 serviceworker:
-  enabled: false # enable PWA with "true"
+  enabled: true # enable PWA with "true"
 
 # Cecil options
 taxonomies:
