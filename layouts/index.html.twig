@@ -1,6 +1,25 @@
-{%- set avatar = asset(site.avatar|default('avatar.jpeg')) -%}
-{%- set hex_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'] -%}
-{%- set socials_color = {twitter: 'text-social-twitter', github: 'text-social-github', linkedin: 'text-social-linkedin', instagram: 'text-social-instagram', youtube: 'text-social-youtube'} -%}
+{%- set social_icons = {
+  twitter: {
+    icon: 'twitter',
+    color: 'text-social-twitter',
+  },
+  github: {
+    icon: 'github',
+    color: 'text-social-github',
+  },
+  linkedin: {
+    icon: 'linkedin',
+    color: 'text-social-linkedin',
+  },
+  instagram: {
+    icon: 'instagram',
+    color: 'text-social-instagram',
+  },
+  youtube: {
+    icon: 'youtube',
+    color: 'text-social-youtube',
+  },
+} -%}
 {%- import 'macros/fontawesome.twig' as fontawesome -%}
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
@@ -24,7 +43,7 @@
       {#- header ~#}
       <header class="text-center">
         {#- avatar ~#}
-        {{ avatar|html({class: 'w-1/2 max-w-36 rounded-full m-auto shadow-2xl dark:brightness-90', alt: 'Avatar of %name%'|trans({'%name%': site.title})}, {responsive: true, webp: true}) }}
+        {{ asset(site.avatar|default('avatar.png'))|html({class: 'w-1/2 max-w-36 rounded-full m-auto shadow-2xl dark:brightness-90', alt: 'Avatar of %name%'|trans({'%name%': site.title})}, {responsive: true, webp: true}) }}
         {#- h1 ~#}
         <h1>
           <div class="text-4xl sm:text-5xl lg:text-6xl font-bold pt-6 pb-2">{{ site.title }}</div>
@@ -33,18 +52,15 @@
         {#- social links ~#}
         {%- if site.social|default([]) ~%}
         <div class="mt-4 flex flex-row justify-center space-x-2">
-        {%- for social_name, social_values in site.social ~%}
-          {%- if social_values['url'] is defined ~%}
-            {%- set color, style, icon = 'text-inherit', 'solid', 'globe' ~%}
-            {%- if socials_color[social_name] is defined ~%}
-              {%- set color, style, icon = socials_color[social_name], 'brands', social_name ~%}
-            {%- endif ~%}
+          {%- for social_name, social_values in site.social ~%}
+            {%- if social_values['url'] is defined ~%}
+              {%- set icon, color = social_icons[social_name]['icon']|default(social_name), social_icons[social_name]['color']|default('text-inherit') ~%}
           <a href="{{ social_values['url'] }}" title="{{ social_name|capitalize }}">
-            <span class="{{ color }} dark:text-inherit">{{ fontawesome.icon(icon, style, 'xl') ~}}</span>
+            <span class="{{ color }} dark:text-inherit">{{ fontawesome.icon(icon, 'brands', 'xl') ~}}</span>
             <span class="sr-only">{{ social_name|capitalize }}</span>
           </a>
-          {%- endif ~%}
-        {%- endfor ~%}
+            {%- endif ~%}
+          {%- endfor ~%}
         </div>
         {%- endif ~%}
       </header>
@@ -57,10 +73,16 @@
         </div>
         {%- endif ~%}
         {#- links grid ~#}
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 md:gap-y-4 mt-8">
+        <ol class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 md:gap-y-4 mt-8">
+          {%- set hex_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'] -%}
           {%- for link in page.links|default ~%}
-            {%- set hex = random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) ~ random(hex_array) -%}
+            {#- button background color (randomized) ~#}
+            {%- set hex = '' -%}
+            {%- for i in 1..6 -%}
+              {%- set hex = hex ~ random(hex_array) -%}
+            {%- endfor -%}
             {%- set rgb = link.color|default('#' ~ hex)|hex_to_rgb ~%}
+          {#- button text color (auto contrast) ~#}
           <style>
             {%- apply minify_css ~%}
             :root {
@@ -78,14 +100,17 @@
             }
             {%- endapply ~%}
           </style>
-          <a style="background-color: {{ link.color|default('#' ~ hex) }}; color: rgb(var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color))" class="flex justify-center items-center space-x-2.5 py-3 rounded-md transition ease-in-out hover:scale-105 duration-300 font-semibold hover:no-underline dark:brightness-90" href="{{ link.url }}">
-            {{ fontawesome.icon(link.icon|default('solid:link')|split(':')[1], link.icon|default('solid:link')|split(':')[0], 'lg') ~}}
-            <span class="text-lg">{{ link.title }}<span>
-          </a>
+          {#- button ~#}
+          <li>
+            <a id="buton-{{ loop.index }}" style="background-color: {{ link.color|default('#' ~ hex) }}; color: rgb(var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color), var(--button-{{ loop.index }}-color))" class="flex justify-center items-center space-x-2.5 py-3 rounded-md transition ease-in-out hover:scale-105 duration-300 font-semibold hover:no-underline dark:brightness-90" href="{{ link.url }}">
+              {{ fontawesome.icon(link.icon|default('solid:link')|split(':')[1], link.icon|default('solid:link')|split(':')[0], 'lg') ~}}
+              <span class="text-lg">{{ link.title }}<span>
+            </a>
+          </li>
           {%- else ~%}
-          <div class="md:col-span-3 lg:col-span-4 content-center">{% trans %}No links found.{% endtrans %}</div>
+          <!--<li class="md:col-span-3 lg:col-span-4 content-center">{% trans %}No links found.{% endtrans %}</li>-->
           {%- endfor ~%}
-        </div>
+        </ol>
       </main>
       {#- footer ~#}
       <footer class="mt-8 pt-4 text-center border-t border-neutral-300">
