@@ -39,14 +39,6 @@ source: https://github.com/ArnaudLigny/ligny.fr
 metatags:
   favicon:
     image: avatar.jpeg
-taxonomies:
-  categories: disabled
-  tags: disabled
-pagination:
-  enabled: false
-output:
-  pagetypeformats:
-    homepage: html
 theme:
   - fontawesome
   - pwa
@@ -55,6 +47,13 @@ manifest:
   #background_color: '#fff'
   theme_color: '#0369a1'
 serviceworker:
+  enabled: false # enable PWA with "true"
+
+# Cecil options
+taxonomies:
+  categories: disabled
+  tags: disabled
+pagination:
   enabled: false
 pages:
   default:
@@ -62,5 +61,12 @@ pages:
       published: false
     sitemap:
       published: false
+    xsl/atom:
+      published: false
+    xsl/rss:
+      published: false
+output:
+  pagetypeformats:
+    homepage: html
 netlify:
   redirect_by_language: true
