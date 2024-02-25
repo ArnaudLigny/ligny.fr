@@ -6,12 +6,14 @@ author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
 social:
-  github:
-    username: ArnaudLigny
-    url: https://github.com/ArnaudLigny/
   twitter:
     creator: ArnaudLigny
     url: https://twitter.com/ArnaudLigny/
+  mastodon:
+    url: https://gazuji.com/@arnaud
+  github:
+    username: ArnaudLigny
+    url: https://github.com/ArnaudLigny/
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 image: avatar.jpeg
