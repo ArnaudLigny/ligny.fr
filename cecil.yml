@@ -16,7 +16,7 @@ social:
     url: https://github.com/ArnaudLigny/
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
-image: avatar.jpeg
+image: avatar.jpg
 language: fr
 languages:
   - code: fr
@@ -40,7 +40,7 @@ languages:
 source: https://github.com/ArnaudLigny/ligny.fr
 metatags:
   favicon:
-    image: avatar.jpeg
+    image: avatar.jpg
 theme:
   - fontawesome
   - pwa
