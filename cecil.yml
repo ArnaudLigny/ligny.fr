@@ -66,4 +66,4 @@ output:
   pagetypeformats:
     homepage: html
 netlify:
-  redirect_by_language: true
+  redirect_by_language: false
