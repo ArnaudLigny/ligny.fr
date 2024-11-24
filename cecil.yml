@@ -6,14 +6,16 @@ author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
 social:
-  twitter:
-    creator: ArnaudLigny
-    url: https://twitter.com/ArnaudLigny/
-  mastodon:
-    url: https://gazuji.com/@arnaud
   github:
     username: ArnaudLigny
     url: https://github.com/ArnaudLigny/
+  bluesky:
+    url: https://bsky.app/profile/arnaud.ligny.fr
+  mastodon:
+    url: https://gazuji.com/@arnaud
+  twitter:
+    creator: ArnaudLigny
+    url: https://twitter.com/ArnaudLigny/
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 image: avatar.jpg
@@ -26,15 +28,12 @@ languages:
     locale: en_US
     name: English
     config:
-      baseline: Fonctional and technical Web consultant, eCommerce expert
+      baseline: Web and eCommerce Expert
       description: Some links about Arnaud Ligny.
       social:
         github:
           username: ArnaudLigny
           url: https://github.com/ArnaudLigny/
-        twitter:
-          creator: ArnaudLigny
-          url: https://twitter.com/ArnaudLigny/
         linkedin:
           url: https://linkedin.com/in/arnaudligny/en/
 source: https://github.com/ArnaudLigny/ligny.fr
