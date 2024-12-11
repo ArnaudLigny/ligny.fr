@@ -23,8 +23,7 @@ module.exports = {
           950: "#010C1D"
         },
         neutral: colors.slate,
-        social: {
-          twitter: '#1da1f2',
+        /*social: {
           github: '#333',
           linkedin: '#0077b5',
           instagram: '#c13584',
@@ -33,7 +32,9 @@ module.exports = {
           steam: '#171A21',
           bluesky: '#1285FE',
           threads: '#000',
-        },
+          twitter: '#1da1f2',
+          x: '#000'
+        },*/
       },
     },
   },

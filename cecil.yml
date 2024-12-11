@@ -5,17 +5,18 @@ description: Quelques liens à propos de Arnaud Ligny.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
+  email: arnaud+contact@ligny.fr
 social:
   github:
-    username: ArnaudLigny
     url: https://github.com/ArnaudLigny/
+    username: ArnaudLigny
   bluesky:
     url: https://bsky.app/profile/arnaud.ligny.fr
   mastodon:
     url: https://gazuji.com/@arnaud
   twitter:
-    creator: ArnaudLigny
     url: https://twitter.com/ArnaudLigny/
+    creator: ArnaudLigny
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 avatar: avatar.jpg
@@ -37,10 +38,11 @@ languages:
           url: https://github.com/ArnaudLigny/
         linkedin:
           url: https://linkedin.com/in/arnaudligny/en/
-source: https://github.com/ArnaudLigny/ligny.fr
 metatags:
   favicon:
     image: avatar.jpg
+  title:
+    only: true
 theme:
   - fontawesome
   - pwa
@@ -66,5 +68,3 @@ pages:
 output:
   pagetypeformats:
     homepage: html
-netlify:
-  redirect_by_language: false

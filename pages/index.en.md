@@ -1,4 +1,10 @@
 ---
+blocks:
+  - name: content # page content
+  - name: links   # page links
+    options:
+      display: column # grid or column ('column' by default)
+  - name: social  # social accounts
 links:
   - title: Blog 🇫🇷
     url: https://arnaudligny.fr/blog/
@@ -12,9 +18,5 @@ links:
     url: https://www.paypal.com/donate/?hosted_button_id=B93F9MKHFX7T6&locale.x=en
     color: '#FED13C'
     icon: brands:paypal
-  - title: Contact
-    url: mailto:arnaud@ligny.fr
-    color: '#183153'
-    icon: solid:envelope
 ---
 Creator of [Cecil](https://cecil.app) & co-creator of [Jamstatic](https://jamstatic.fr).
