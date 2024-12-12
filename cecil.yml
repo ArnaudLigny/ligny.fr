@@ -34,37 +34,18 @@ languages:
       description: Some links about Arnaud Ligny.
       social:
         github:
-          username: ArnaudLigny
           url: https://github.com/ArnaudLigny/
+          username: ArnaudLigny
         linkedin:
           url: https://linkedin.com/in/arnaudligny/en/
-metatags:
-  favicon:
-    image: avatar.jpg
-  title:
-    only: true
 theme:
   - fontawesome
+  - links
   - pwa
   - netlify
+
 manifest:
   #background_color: '#fff'
   theme_color: '#0369a1'
 serviceworker:
-  enabled: true # enable PWA with "true"
-
-# Cecil options
-taxonomies:
-  categories: disabled
-  tags: disabled
-pagination:
-  enabled: false
-pages:
-  default:
-    xsl/atom:
-      published: false
-    xsl/rss:
-      published: false
-output:
-  pagetypeformats:
-    homepage: html
+  enabled: true
