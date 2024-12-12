@@ -6,11 +6,11 @@ blocks:
       display: column # grid or column ('column' by default)
   - name: social  # social accounts
 links:
-  - title: Blog
+  - title: Mon blog
     url: https://arnaudligny.fr/blog/
     color: '#1A4A91'
     icon: solid:blog
-  - title: Cecil
+  - title: Mon générateur de site
     url: https://cecil.app/fr/
     color: '#163C56'
     icon: solid:user-tie
