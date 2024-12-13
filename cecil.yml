@@ -44,6 +44,13 @@ theme:
   - pwa
   - netlify
 
+# CSS theme and buttons colors
+links:
+  theme: default
+  buttons:
+    display: column
+    color: page
+
 manifest:
   #background_color: '#fff'
   theme_color: '#0369a1'
