@@ -2,9 +2,6 @@
 blocks:
   - name: content
   - name: links
-    options:
-      display: column
-      color: page
   - name: social
 links:
   - title: Mon blog
