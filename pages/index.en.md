@@ -1,10 +1,8 @@
 ---
 blocks:
-  - name: content # page content
-  - name: links   # page links
-    options:
-      display: column # grid or column ('column' by default)
-  - name: social  # social accounts
+  - name: content
+  - name: links
+  - name: social
 links:
   - title: Blog 🇫🇷
     url: https://arnaudligny.fr/blog/

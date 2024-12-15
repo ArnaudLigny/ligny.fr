@@ -48,7 +48,6 @@ theme:
 links:
   theme: default
   buttons:
-    display: column
     color: page
 
 manifest:
