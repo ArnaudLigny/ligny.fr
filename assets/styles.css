@@ -555,6 +555,7 @@ video {
 }
 
 html {
+  min-height: 100dvh;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
@@ -656,35 +657,15 @@ a:hover:not(.button), button:hover {
 
 [data-theme="gradient-1"] {
   body {
-    --tw-bg-opacity: 1;
-    background-color: rgb(235 243 254 / var(--tw-bg-opacity, 1));
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   }
   body {
-    --tw-text-opacity: 1;
-    color: rgb(3 24 59 / var(--tw-text-opacity, 1));
-  }
-  @media (prefers-color-scheme: dark) {
-    body {
-      --tw-bg-opacity: 1;
-      background-color: rgb(1 12 29 / var(--tw-bg-opacity, 1));
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    body {
-      --tw-text-opacity: 1;
-      color: rgb(177 206 251 / var(--tw-text-opacity, 1));
-    }
-  }
-  body {
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  }
-  body {
-    --tw-gradient-from: #3B82F6 var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-from: #639CF8 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(99 156 248 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   }
   body {
-    --tw-gradient-to: #64748b var(--tw-gradient-to-position);
+    --tw-gradient-to: #94a3b8 var(--tw-gradient-to-position);
   }
   @media (prefers-color-scheme: dark) {
     body {
@@ -780,6 +761,11 @@ a:hover:not(.button), button:hover {
     a:hover:not(.button), button:hover {
       --tw-text-opacity: 1;
       color: rgb(177 206 251 / var(--tw-text-opacity, 1));
+    }
+  }
+  @media (min-width: 640px) {
+    #buttons {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .button {
@@ -1015,10 +1001,6 @@ a:hover:not(.button), button:hover {
 }
 
 @media (min-width: 640px) {
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
