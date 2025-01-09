@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c133102ae0910831f37a0f067bb8a8f1",
+    "content-hash": "7f4bf397cf8838a42d99088c42eaa333",
     "packages": [
         {
             "name": "cecil/theme-fontawesome",
@@ -125,16 +125,16 @@
         },
         {
             "name": "cecil/theme-links",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-links.git",
-                "reference": "029fef44f8b582e7b1503bcad5bffceee033fd5a"
+                "reference": "8e58c017b1bfcae8cb1cd0dde73fb2760ff85e91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/029fef44f8b582e7b1503bcad5bffceee033fd5a",
-                "reference": "029fef44f8b582e7b1503bcad5bffceee033fd5a",
+                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/8e58c017b1bfcae8cb1cd0dde73fb2760ff85e91",
+                "reference": "8e58c017b1bfcae8cb1cd0dde73fb2760ff85e91",
                 "shasum": ""
             },
             "require": {
@@ -160,7 +160,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-links/issues",
-                "source": "https://github.com/Cecilapp/theme-links/tree/1.3.1"
+                "source": "https://github.com/Cecilapp/theme-links/tree/1.4.0"
             },
             "funding": [
                 {
@@ -172,7 +172,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-01-03T14:54:34+00:00"
+            "time": "2025-01-09T00:35:53+00:00"
         },
         {
             "name": "cecil/theme-netlify",
