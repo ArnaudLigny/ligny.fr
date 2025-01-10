@@ -4,6 +4,10 @@ blocks:
   - name: links
   - name: social
 links:
+  - title: Mon CV
+    url: https://arnaudligny.fr/cv/
+    color: '#0A66C2'
+    icon: solid:address-card
   - title: Mon blog
     url: https://arnaudligny.fr/blog/
     color: '#1A4A91'
