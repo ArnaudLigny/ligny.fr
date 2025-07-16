@@ -53,5 +53,12 @@ links:
 manifest:
   #background_color: '#fff'
   theme_color: '#0369a1'
+  icons:
+    - icon-192x192.png
+    - icon-512x512.png
+    - src: icon-192x192.png
+      purpose: maskable
+    - src: icon-512x512.png
+      purpose: maskable
 serviceworker:
   enabled: true
