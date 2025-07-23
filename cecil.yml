@@ -51,6 +51,7 @@ links:
     color: page
 
 manifest:
+  short_name: AL
   #background_color: '#fff'
   theme_color: '#0369a1'
   icons:
