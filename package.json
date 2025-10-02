@@ -1,7 +1,7 @@
 {
-  "name": "cecil-links",
+  "name": "ligny.fr",
   "devDependencies": {
-    "tailwindcss": "^3.4"
+    "tailwindcss": "^4.1"
   },
   "scripts": {
     "build": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
