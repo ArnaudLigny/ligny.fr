@@ -66,10 +66,10 @@ serviceworker:
 
 server:
   redirects:
-    - from: https://ligny.netlify.com/*
-      to: https://ligny.fr/:splat
-      status: 301
-      force: true
+    #- from: https://ligny.netlify.com/*
+    #  to: https://ligny.fr/:splat
+    #  status: 301
+    #  force: true
     - from: https://www.ligny.fr/*
       to: https://ligny.fr/:splat
       status: 301
