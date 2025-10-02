@@ -42,7 +42,7 @@ theme:
   - fontawesome
   - links
   - pwa
-  - netlify
+  - redirects
 
 # CSS theme and buttons colors
 links:
@@ -63,3 +63,14 @@ manifest:
       purpose: maskable
 serviceworker:
   enabled: true
+
+server:
+  redirects:
+    - from: https://ligny.netlify.com/*
+      to: https://ligny.fr/:splat
+      status: 301
+      force: true
+    - from: https://www.ligny.fr/*
+      to: https://ligny.fr/:splat
+      status: 301
+      force: true
