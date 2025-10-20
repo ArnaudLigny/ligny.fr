@@ -49,7 +49,12 @@ links:
   theme: default
   buttons:
     color: page
-
+# pages configuration
+pages:
+  body:
+    links:
+      external:
+        blank: true # open in new tab
 manifest:
   short_name: AL
   #background_color: '#fff'
