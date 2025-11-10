@@ -39,14 +39,13 @@ languages:
         linkedin:
           url: https://linkedin.com/in/arnaudligny/en/
 theme:
-  - fontawesome
   - links
+  - fontawesome
   - pwa
   - redirects
 
 # CSS theme and buttons colors
 links:
-  theme: default
   buttons:
     color: page
 # pages configuration
@@ -57,15 +56,9 @@ pages:
         blank: true # open in new tab
 manifest:
   short_name: AL
-  #background_color: '#fff'
-  theme_color: '#0369a1'
-  icons:
-    - icon-192x192.png
-    - icon-512x512.png
-    - src: icon-192x192.png
-      purpose: maskable
-    - src: icon-512x512.png
-      purpose: maskable
+  background_color: '#EFF6FF'
+  theme_color: '#EFF6FF'
+  theme_color_dark: '#162556'
 serviceworker:
   enabled: true
 
