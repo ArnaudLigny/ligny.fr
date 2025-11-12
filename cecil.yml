@@ -1,7 +1,7 @@
 title: Arnaud Ligny
 baseurl: https://ligny.fr/
-baseline: Expert Web et e-commerce
-description: Expert Web et e-commerce, Créateur de Cecil & co-créateur de Jamstatic.
+baseline: "Expert Web et e-commerce"
+description: "Expert Web et e-commerce, Créateur de Cecil & co-créateur de Jamstatic."
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
@@ -20,7 +20,36 @@ social:
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 avatar: avatar.jpg
-image: avatar.jpg
+image: avatar.jpg # Open Graph image
+# CSS theme and buttons colors
+links:
+  buttons:
+    color: page # page or css ('page' by default)
+# pages configuration
+pages:
+  body:
+    links:
+      external:
+        blank: true # open in new tab
+  default:
+    sitemap:
+      published: false
+    xsl/sitemap:
+      published: false
+    xsl/atom:
+      published: false
+output:
+  pagetypeformats:
+    homepage: html
+# PWA
+manifest:
+  short_name: AL
+  background_color: '#EFF6FF'
+  theme_color: '#EFF6FF'
+  theme_color_dark: '#162556'
+serviceworker:
+  enabled: true
+# languages
 language: fr
 languages:
   - code: fr
@@ -38,30 +67,14 @@ languages:
           username: ArnaudLigny
         linkedin:
           url: https://linkedin.com/in/arnaudligny/en/
+# themes
 theme:
   - links
   - fontawesome
   - pwa
   - redirects
-
-# CSS theme and buttons colors
-links:
-  buttons:
-    color: page
-# pages configuration
-pages:
-  body:
-    links:
-      external:
-        blank: true # open in new tab
-manifest:
-  short_name: AL
-  background_color: '#EFF6FF'
-  theme_color: '#EFF6FF'
-  theme_color_dark: '#162556'
-serviceworker:
-  enabled: true
-
+  - headers
+# server
 server:
   redirects:
     #- from: https://ligny.netlify.com/*
@@ -72,3 +85,4 @@ server:
       to: https://ligny.fr/:splat
       status: 301
       force: true
+
