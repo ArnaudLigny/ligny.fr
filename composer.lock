@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-fontawesome",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-fontawesome.git",
-                "reference": "f2388042decf9812166643775fc0b9130ba17c4b"
+                "reference": "fe04a539377a4a97f7dbe38164b9e0bf660cc0f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-fontawesome/zipball/f2388042decf9812166643775fc0b9130ba17c4b",
-                "reference": "f2388042decf9812166643775fc0b9130ba17c4b",
+                "url": "https://api.github.com/repos/Cecilapp/theme-fontawesome/zipball/fe04a539377a4a97f7dbe38164b9e0bf660cc0f3",
+                "reference": "fe04a539377a4a97f7dbe38164b9e0bf660cc0f3",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-fontawesome/issues",
-                "source": "https://github.com/Cecilapp/theme-fontawesome/tree/1.4.2"
+                "source": "https://github.com/Cecilapp/theme-fontawesome/tree/1.4.3"
             },
             "funding": [
                 {
@@ -55,7 +55,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-11-20T00:48:54+00:00"
+            "time": "2025-11-20T14:59:40+00:00"
         },
         {
             "name": "cecil/theme-headers",
@@ -333,5 +333,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
