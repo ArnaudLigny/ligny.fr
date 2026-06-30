@@ -85,4 +85,3 @@ server:
       to: https://ligny.fr/:splat
       status: 301
       force: true
-
