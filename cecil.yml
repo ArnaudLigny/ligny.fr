@@ -19,8 +19,8 @@ social:
     creator: ArnaudLigny
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
-avatar: avatar.jpg
-image: avatar.jpg # Open Graph image
+avatar: avatar.png
+image: avatar.png # Open Graph image
 # CSS theme and buttons colors
 links:
   buttons:
