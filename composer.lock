@@ -4,33 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aba15296c319c5d539668059345e35d2",
+    "content-hash": "889ac6742df1eee0d4190a518554c22b",
     "packages": [
         {
             "name": "aligny/tailwind-builder",
-            "version": "1.1.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ArnaudLigny/tailwind-builder.git",
-                "reference": "a712dbd65819c6167c97e1f442229ca9f22d0b2f"
+                "reference": "da6dfb30e651964d8e1e79ccef401b5e09b9dfd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ArnaudLigny/tailwind-builder/zipball/a712dbd65819c6167c97e1f442229ca9f22d0b2f",
-                "reference": "a712dbd65819c6167c97e1f442229ca9f22d0b2f",
+                "url": "https://api.github.com/repos/ArnaudLigny/tailwind-builder/zipball/da6dfb30e651964d8e1e79ccef401b5e09b9dfd8",
+                "reference": "da6dfb30e651964d8e1e79ccef401b5e09b9dfd8",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1",
-                "symfony/console": "^6.4 || ^7.0",
-                "symfony/process": "^6.4 || ^7.0"
+                "php": "^8.2",
+                "symfony/console": "^7.4",
+                "symfony/process": "^7.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.5"
+                "phpunit/phpunit": "^11.5"
             },
             "bin": [
-                "bin/tailwind-builder",
-                "bin/tailwind-build"
+                "bin/tailwind-builder"
             ],
             "type": "library",
             "autoload": {
@@ -54,7 +53,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ArnaudLigny/tailwind-builder/issues",
-                "source": "https://github.com/ArnaudLigny/tailwind-builder/tree/1.1.0"
+                "source": "https://github.com/ArnaudLigny/tailwind-builder/tree/1.2.1"
             },
             "funding": [
                 {
@@ -62,7 +61,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-28T00:32:51+00:00"
+            "time": "2026-07-01T21:42:05+00:00"
         },
         {
             "name": "cecil/theme-fontawesome",
@@ -233,16 +232,16 @@
         },
         {
             "name": "cecil/theme-links",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-links.git",
-                "reference": "49d3cca090175b80b4e23cf2217d2b4c3f9d6171"
+                "reference": "0fcb2b5cb56567d711e451c8ae9fbf68cf7bc4a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/49d3cca090175b80b4e23cf2217d2b4c3f9d6171",
-                "reference": "49d3cca090175b80b4e23cf2217d2b4c3f9d6171",
+                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/0fcb2b5cb56567d711e451c8ae9fbf68cf7bc4a1",
+                "reference": "0fcb2b5cb56567d711e451c8ae9fbf68cf7bc4a1",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +268,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-links/issues",
-                "source": "https://github.com/Cecilapp/theme-links/tree/2.6.0"
+                "source": "https://github.com/Cecilapp/theme-links/tree/2.6.1"
             },
             "funding": [
                 {
@@ -281,20 +280,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-06-07T21:16:27+00:00"
+            "time": "2026-07-01T00:06:09+00:00"
         },
         {
             "name": "cecil/theme-pwa",
-            "version": "2.20.0",
+            "version": "2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-pwa.git",
-                "reference": "4579664d6525c7eea8f649c01ea17264e10c244f"
+                "reference": "8c2d820b9dd201df42be607015eb7c026245d462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/4579664d6525c7eea8f649c01ea17264e10c244f",
-                "reference": "4579664d6525c7eea8f649c01ea17264e10c244f",
+                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/8c2d820b9dd201df42be607015eb7c026245d462",
+                "reference": "8c2d820b9dd201df42be607015eb7c026245d462",
                 "shasum": ""
             },
             "require": {
@@ -319,7 +318,7 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.20.0"
+                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.21.0"
             },
             "funding": [
                 {
@@ -331,7 +330,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-08-06T15:16:06+00:00"
+            "time": "2026-07-10T02:24:09+00:00"
         },
         {
             "name": "cecil/theme-redirects",
@@ -438,16 +437,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.4.14",
+            "version": "v7.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "92f58bc4bf97a92ed1b9f367f0cd44f20bde0e87"
+                "reference": "f4c69c9aed03abf933b294257d618bdd9b30a06d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/92f58bc4bf97a92ed1b9f367f0cd44f20bde0e87",
-                "reference": "92f58bc4bf97a92ed1b9f367f0cd44f20bde0e87",
+                "url": "https://api.github.com/repos/symfony/console/zipball/f4c69c9aed03abf933b294257d618bdd9b30a06d",
+                "reference": "f4c69c9aed03abf933b294257d618bdd9b30a06d",
                 "shasum": ""
             },
             "require": {
@@ -512,7 +511,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.4.14"
+                "source": "https://github.com/symfony/console/tree/v7.4.16"
             },
             "funding": [
                 {
@@ -532,7 +531,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-16T11:50:14+00:00"
+            "time": "2026-07-31T12:37:14+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -690,16 +689,16 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.38.1",
+            "version": "v1.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "e9247d281d694a5120554d9afaf54e070e88a603"
+                "reference": "bb899c1db0aa8127dc3afe8cda4a67eb24915f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/e9247d281d694a5120554d9afaf54e070e88a603",
-                "reference": "e9247d281d694a5120554d9afaf54e070e88a603",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/bb899c1db0aa8127dc3afe8cda4a67eb24915f8d",
+                "reference": "bb899c1db0aa8127dc3afe8cda4a67eb24915f8d",
                 "shasum": ""
             },
             "require": {
@@ -748,7 +747,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.38.1"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.41.0"
             },
             "funding": [
                 {
@@ -768,7 +767,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-26T05:58:03+00:00"
+            "time": "2026-07-28T08:25:59+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -1094,16 +1093,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.4.13",
+            "version": "v7.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "961683010db3b27ec6ebcd7308e6e1ee8fa7ffde"
+                "reference": "e394af32256bf9e7bf80849d95e589167c10097b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/961683010db3b27ec6ebcd7308e6e1ee8fa7ffde",
-                "reference": "961683010db3b27ec6ebcd7308e6e1ee8fa7ffde",
+                "url": "https://api.github.com/repos/symfony/string/zipball/e394af32256bf9e7bf80849d95e589167c10097b",
+                "reference": "e394af32256bf9e7bf80849d95e589167c10097b",
                 "shasum": ""
             },
             "require": {
@@ -1161,7 +1160,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v7.4.13"
+                "source": "https://github.com/symfony/string/tree/v7.4.15"
             },
             "funding": [
                 {
@@ -1181,7 +1180,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-23T15:23:29+00:00"
+            "time": "2026-07-28T07:33:02+00:00"
         }
     ],
     "packages-dev": [],
