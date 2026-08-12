@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "889ac6742df1eee0d4190a518554c22b",
+    "content-hash": "3257f5b7c0f250af4da9c982e0a05d1c",
     "packages": [
         {
             "name": "aligny/tailwind-builder",
@@ -232,20 +232,20 @@
         },
         {
             "name": "cecil/theme-links",
-            "version": "2.6.1",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-links.git",
-                "reference": "0fcb2b5cb56567d711e451c8ae9fbf68cf7bc4a1"
+                "reference": "6dce355858986f8dfb8c38419e2b7a02a56b0e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/0fcb2b5cb56567d711e451c8ae9fbf68cf7bc4a1",
-                "reference": "0fcb2b5cb56567d711e451c8ae9fbf68cf7bc4a1",
+                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/6dce355858986f8dfb8c38419e2b7a02a56b0e42",
+                "reference": "6dce355858986f8dfb8c38419e2b7a02a56b0e42",
                 "shasum": ""
             },
             "require": {
-                "aligny/tailwind-builder": "^1.1",
+                "aligny/tailwind-builder": "^1.2",
                 "cecil/theme-fontawesome": "^1.5",
                 "cecil/theme-installer": "^1.4|^2.0"
             },
@@ -268,7 +268,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-links/issues",
-                "source": "https://github.com/Cecilapp/theme-links/tree/2.6.1"
+                "source": "https://github.com/Cecilapp/theme-links/tree/2.7.0"
             },
             "funding": [
                 {
@@ -280,7 +280,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-07-01T00:06:09+00:00"
+            "time": "2026-08-12T12:51:14+00:00"
         },
         {
             "name": "cecil/theme-pwa",
