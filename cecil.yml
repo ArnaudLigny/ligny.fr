@@ -38,9 +38,6 @@ pages:
       published: false
     xsl/atom:
       published: false
-output:
-  pagetypeformats:
-    homepage: html
 # PWA
 manifest:
   short_name: AL
