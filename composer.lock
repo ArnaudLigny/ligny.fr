@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93e9c2e1c5566af08912aaba12bd4df4",
+    "content-hash": "90988dc94379f31daea2a3d022c779cd",
     "packages": [
         {
             "name": "aligny/tailwind-builder",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ArnaudLigny/tailwind-builder.git",
-                "reference": "da6dfb30e651964d8e1e79ccef401b5e09b9dfd8"
+                "reference": "ccc1e5e4a8d6cc756ff5ad7f04a6d20a28b2ad21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ArnaudLigny/tailwind-builder/zipball/da6dfb30e651964d8e1e79ccef401b5e09b9dfd8",
-                "reference": "da6dfb30e651964d8e1e79ccef401b5e09b9dfd8",
+                "url": "https://api.github.com/repos/ArnaudLigny/tailwind-builder/zipball/ccc1e5e4a8d6cc756ff5ad7f04a6d20a28b2ad21",
+                "reference": "ccc1e5e4a8d6cc756ff5ad7f04a6d20a28b2ad21",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ArnaudLigny/tailwind-builder/issues",
-                "source": "https://github.com/ArnaudLigny/tailwind-builder/tree/1.2.1"
+                "source": "https://github.com/ArnaudLigny/tailwind-builder/tree/1.2.2"
             },
             "funding": [
                 {
@@ -61,7 +61,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-01T21:42:05+00:00"
+            "time": "2026-09-29T15:02:28+00:00"
         },
         {
             "name": "cecil/theme-fontawesome",
@@ -232,16 +232,16 @@
         },
         {
             "name": "cecil/theme-links",
-            "version": "2.7.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-links.git",
-                "reference": "6dce355858986f8dfb8c38419e2b7a02a56b0e42"
+                "reference": "c5c4e257a8f25d0b5b103a407026a16987368bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/6dce355858986f8dfb8c38419e2b7a02a56b0e42",
-                "reference": "6dce355858986f8dfb8c38419e2b7a02a56b0e42",
+                "url": "https://api.github.com/repos/Cecilapp/theme-links/zipball/c5c4e257a8f25d0b5b103a407026a16987368bca",
+                "reference": "c5c4e257a8f25d0b5b103a407026a16987368bca",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +268,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-links/issues",
-                "source": "https://github.com/Cecilapp/theme-links/tree/2.7.0"
+                "source": "https://github.com/Cecilapp/theme-links/tree/3.0.0"
             },
             "funding": [
                 {
@@ -280,7 +280,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-08-12T12:51:14+00:00"
+            "time": "2026-09-29T23:31:38+00:00"
         },
         {
             "name": "cecil/theme-pwa",
@@ -437,16 +437,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.4.18",
+            "version": "v7.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "23d6f88a29f6d0eac45bd77d70307adf83ba7ab0"
+                "reference": "d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/23d6f88a29f6d0eac45bd77d70307adf83ba7ab0",
-                "reference": "23d6f88a29f6d0eac45bd77d70307adf83ba7ab0",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d",
+                "reference": "d7bca2fe05241dc7732d0c8b6d551b879f5d0a7d",
                 "shasum": ""
             },
             "require": {
@@ -511,7 +511,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.4.18"
+                "source": "https://github.com/symfony/console/tree/v7.4.20"
             },
             "funding": [
                 {
@@ -531,7 +531,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-25T14:18:37+00:00"
+            "time": "2026-09-18T15:55:00+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -941,16 +941,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v7.4.18",
+            "version": "v7.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "058d17fc284cce14efb2385783b55014a461b176"
+                "reference": "ed0ae095b86994d370d5791612e55984f15aa30e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/058d17fc284cce14efb2385783b55014a461b176",
-                "reference": "058d17fc284cce14efb2385783b55014a461b176",
+                "url": "https://api.github.com/repos/symfony/process/zipball/ed0ae095b86994d370d5791612e55984f15aa30e",
+                "reference": "ed0ae095b86994d370d5791612e55984f15aa30e",
                 "shasum": ""
             },
             "require": {
@@ -982,7 +982,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v7.4.18"
+                "source": "https://github.com/symfony/process/tree/v7.4.19"
             },
             "funding": [
                 {
@@ -1002,7 +1002,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-21T17:40:08+00:00"
+            "time": "2026-09-02T12:38:34+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -1093,16 +1093,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.4.15",
+            "version": "v7.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "e394af32256bf9e7bf80849d95e589167c10097b"
+                "reference": "02731ce2bd26514bec9efc0baef2cd0b0cf67f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/e394af32256bf9e7bf80849d95e589167c10097b",
-                "reference": "e394af32256bf9e7bf80849d95e589167c10097b",
+                "url": "https://api.github.com/repos/symfony/string/zipball/02731ce2bd26514bec9efc0baef2cd0b0cf67f46",
+                "reference": "02731ce2bd26514bec9efc0baef2cd0b0cf67f46",
                 "shasum": ""
             },
             "require": {
@@ -1160,7 +1160,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v7.4.15"
+                "source": "https://github.com/symfony/string/tree/v7.4.19"
             },
             "funding": [
                 {
@@ -1180,7 +1180,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-28T07:33:02+00:00"
+            "time": "2026-09-11T14:46:58+00:00"
         }
     ],
     "packages-dev": [],
