@@ -14,9 +14,9 @@ social:
     url: https://bsky.app/profile/arnaud.ligny.fr
   mastodon:
     url: https://gazuji.com/@arnaud
-  twitter:
-    url: https://twitter.com/ArnaudLigny/
-    creator: ArnaudLigny
+  #twitter:
+  #  url: https://twitter.com/ArnaudLigny/
+  #  creator: ArnaudLigny
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 avatar: avatar.png
